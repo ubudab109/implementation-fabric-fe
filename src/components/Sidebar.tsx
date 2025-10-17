@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import { Type, Square, Image as ImageIcon } from "lucide-react";
 import type { FabricDesign } from "../interface/FabricDesignInterface";
 
