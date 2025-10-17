@@ -6,4 +6,4 @@ Example implementation using Fabric JS to design in canvas
 
 - RUN npm install
 - Create `.env` in root project and copy the value from .env.example
-- Backend Repository: 
+- Backend Repository: https://github.com/ubudab109/implementation-fabric-be
