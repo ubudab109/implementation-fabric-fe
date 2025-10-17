@@ -207,18 +207,19 @@ const App: React.FC = () => {
                 <main className="flex-1 min-h-[70vh] bg-white rounded-lg shadow-xl border border-gray-100 p-8 flex justify-center items-center relative overflow-hidden">
                     {/* Fabric.js Canvas Placeholder (simulates the visual container) */}
                     <div className="relative p-8 border border-gray-300 rounded-xl shadow-2xl bg-gray-100/50">
-                        <canvas ref={canvasRef} id="canvas"></canvas>
-
-                        {/* Fabric.js Classes Tag (Top Right) */}
-                        <div className="absolute top-0 right-0 mt-2 mr-2 px-3 py-1 text-xs font-semibold text-white bg-purple-600 rounded-full">
+                        <div className="flex flex-col items-center">
                             <input
                                 type="text"
                                 name="designName"
                                 onChange={(e) => setDesignName(e.target.value)}
                                 value={designName}
                                 placeholder="Design Name"
-                                id=""
+                                className="w-64 sm:w-80 md:w-96 px-3 py-2 text-sm font-medium rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500 mb-4"
                             />
+
+                            <div className="relative p-8 border border-gray-300 rounded-xl shadow-2xl bg-gray-100/50">
+                                <canvas ref={canvasRef} id="canvas"></canvas>
+                            </div>
                         </div>
                     </div>
                 </main>
